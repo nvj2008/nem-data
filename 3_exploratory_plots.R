@@ -2,6 +2,11 @@
 # Part 3. Exploratory Plots
 
 # 3.A | Price and Demand
+
+# all of nem
+plot(nem$TOTALDEMAND,nem$RRP)
+
+# split by state
 par("mar")
 par(mar=c(1,1,1,1))
 par(mfrow=c(2,1))
@@ -48,6 +53,7 @@ lines(x3_hist,col=3)
 lines(x4_hist,col=4)
 lines(x5_hist,col=5)
 lines(x6_hist,col=6)
+legend("topright",c("NSW","QLD","SA","VIC","TAS","SNOWY"),lty=c(1,1),lwd=c(2.5,2.5),col=c(1,2,3,4,5,6))
 
 par(mfrow=c(1,1))
 plot(x1_hist,col=1,xlim=c(-10,100),ylim=c(0,x_max),main="Distribution of Price by State - Zoomed In",cex=0.7)
@@ -56,3 +62,4 @@ lines(x3_hist,col=3)
 lines(x4_hist,col=4)
 lines(x5_hist,col=5)
 lines(x6_hist,col=6)
+legend("topright",c("NSW","QLD","SA","VIC","TAS","SNOWY"),lty=c(1,1),lwd=c(2.5,2.5),col=c(1,2,3,4,5,6))
