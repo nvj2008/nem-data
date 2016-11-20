@@ -12,7 +12,7 @@ library('bitops')
 library('stringr')
 library('RCurl')
 
-# 1.B | Setup variables and irectories
+# 1.B | Setup variables and directories
 
 # define variables
 rm(list=ls())
@@ -93,7 +93,7 @@ for (i in 1:length(states_list)) {
 
 Sys.time() - TIME
 
-# 1.D | Write data to putput file
+# 1.D | Write log file
 write.csv(log,paste(out_dir,'NEMWEB_log_',format(Sys.time(),format="%Y%m%d_%H%M%S"),'.csv',sep=''))
 
 # Finished Running part 1; files grabbed.
